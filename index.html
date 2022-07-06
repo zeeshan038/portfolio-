@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/24c0905e95.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Indie+Flower&family=Source+Sans+Pro:wght@200&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+  
+    </script>
+  </head>
+  <body>
+    <div id="cotainer">
+      <nav id="navbar">
+        <h1>Zeeshan</h1>
+        <div class="nav-links">
+        
+        <ul>
+          <li><a href="#Home">Home </a></li>
+          <li><a href="#home">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#">Projects</a></li>
+          <li class="contact"><a href="#" >Contact</a></li>
+        </ul>
+      </div>
+        <button class="hamburger"><i class="fa-solid fa-bars"></i></button>
+      </nav>
+      
+      <div class="main_section">
+        
+        <h2 class="hd">I am A Developer <br>
+          <span>FrontEnd Developer</span> </h2>
+          <!-- <input type="button" value="Hire me" id="hire"> -->
+        <!-- <h5 class="skill">FrontEnd Developer</h5> -->
+        <img src="images/img 2.png" alt="" id="image">
+        </div>
+      </div>
+      <section id="home">
+        <div class="About_Me">
+          <h1 class="me">
+            Why Me..
+          </h1>
+          <img src="images/img.1.png" alt="" class="about_img">
+          <p class="para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Dicta beatae, sint amet hic numquam, <br> officiis reiciendis adipisci sunt officia iusto at 
+            corporis voluptatibus ipsam consequuntur <br> voluptatum quam alias doloremque dignissimos, quae quasi. </p>
+           
+        </div>
+      </section>
+      <section id="skills">
+          <div class="my_skills">
+                My Skills
+          </div>
+          <div class="skills">
+             <div class="skillname">HTML</div>
+             <div class="skill_bar">
+               <div class="skill_per" per="90%" style="max-width: 90%;"></div>
+             </div>
+          </div>
+        </div>
+        <div class="skills">
+          <div class="skillname">CSS</div>
+          <div class="skill_bar">
+            <div class="skill_per" per="60%" style="max-width: 60%;"></div>
+          </div>
+       </div>
+     </div>
+     <div class="skills">
+      <div class="skillname">JavaScript</div>
+      <div class="skill_bar">
+        <div class="skill_per" per="40%" style="max-width: 40%;"></div>
+      </div>
+   </div>
+ </div>
+      </section>
+    </div>
+   <script>
+      let hamburger = document.querySelector('.hamburger');
+      let navlinks = document.querySelector('.nav-links')
+      hamburger.addEventListener('click',()=>{
+        navlinks.classList.toggle('showNav');
+      })
+   </script>
+  </body>
+</html>
